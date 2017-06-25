@@ -1,0 +1,12 @@
+<ul class="nav">
+  <li class="nav__item">
+    <a routerLink="/" class="nav__link" routerLinkActive="nav__link_active" [routerLinkActiveOptions]="{ exact: true }">
+    Home
+    </a>
+  </li>
+  <li *ngFor="let navItem of nav" class="nav__item">
+    <a routerLink="{{navItem.path}}" class="nav__link" routerLinkActive="nav__link_active">
+    {{navItem.name}}
+    </a>
+  </li>
+</ul>

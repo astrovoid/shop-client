@@ -1,0 +1,14 @@
+<ul class="products">
+  <li class="product products__item" *ngFor="let product of products">
+    <div class="product__header">
+      <a [routerLink]="['/products', product.id]" class="product__link">
+        <span class="product__name">{{product.name}}</span>
+        <img src="{{product.img}}" alt="" class="product__img">
+      </a>
+    </div>
+    <div class="product__short-desc">
+      {{product.description}}
+    </div>
+    <a [routerLink]="['/products', product.id]" class="button button_more product__button">Watch</a>
+  </li>
+</ul>

@@ -1,0 +1,10 @@
+<div class="product" *ngIf="product">
+  <div class="product__header">
+    <span class="product__name">{{product.name}}</span>
+    <img src="{{product.img}}" alt="" class="product__img">
+  </div>
+  <div class="product__short-desc">
+    {{product.description}}
+  </div>
+</div>
+<button (click)="goBack()">Back</button>
