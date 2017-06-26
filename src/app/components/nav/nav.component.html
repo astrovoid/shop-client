@@ -4,9 +4,14 @@
     Home
     </a>
   </li>
-  <li *ngFor="let navItem of nav" class="nav__item">
-    <a routerLink="{{navItem.path}}" class="nav__link" routerLinkActive="nav__link_active">
-    {{navItem.name}}
+  <li class="nav__item">
+    <a routerLink="/products" class="nav__link" routerLinkActive="nav__link_active">
+    Products
+    </a>
+  </li>
+  <li class="nav__item">
+    <a routerLink="/about" class="nav__link" routerLinkActive="nav__link_active">
+    About
     </a>
   </li>
 </ul>

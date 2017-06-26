@@ -7,6 +7,9 @@ import { RouterModule } from '@angular/router';
 
 import { ProductsListComponent } from './products-list/products-list.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { ProductColorComponent } from './product-color/product-color.component';
+
+import { ProductService } from './../../services/product.service'; 
 
 @NgModule({
   imports: [
@@ -16,7 +19,9 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
   ],
   declarations: [ 
   ProductDetailComponent,
-  ProductsListComponent
-  ]
+  ProductsListComponent,
+  ProductColorComponent
+  ],
+  providers: [ProductService]
 })
 export class ProductsModule { }

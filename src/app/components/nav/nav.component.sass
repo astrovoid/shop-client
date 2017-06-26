@@ -4,23 +4,27 @@
     display: flex
     flex: 1 0 0
 
-    border: 1px solid #333
-
-    background: #F1F1F1
+    color: #fff
+    background: #1E88E5
     list-style: none
     &__item
         
     &__link
         display: block
-        padding: 10px 10px
-
-        border-left: 1px solid black
-        border-right: 1px solid black
-
-        margin-left: -1px
-
+        box-sizing: content-box
+        padding: 10px 10px 6px 10px
+        
+        border-bottom: 4px solid #1E88E5
+        color: #fff
         text-decoration: none
+        &:first-child 
+            border-left: none
+        &:last-child
+            border-right: none
         &:hover
-            background: darken(#F1F1F1, 10%)
+            border-bottom: 4px solid lighten(#1E88E5, 15%)
+            background: lighten(#1E88E5, 15%)
+        &:visited
+            color: #fff
         &_active
-            background: green
+            border-bottom: 4px solid lighten(#1E88E5, 35%)
